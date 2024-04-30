@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html, body, input {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  height: 7.2rem;
+  padding: 1.2rem 2.8rem;
+  align-items: center;
+  gap: 2.6rem;
+  background-color: #065E7C;
+  width: 100%;
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.6rem;
+  border: 0;
+  border-radius: .6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.20);
+
+}
+
+.input-wrapper input::placeholder {
+  opacity: 1;
+  color: white;
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.page img {
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
+.tittle {
+  margin-bottom: 1.2rem;
+
+  padding: 0 2.2rem;
+}
+
+.tittle h1 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+
+  margin-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  width: 40px;
+  width: 40px;
+}
+
+.page p {
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;  
+  padding: 0 2.2rem;
+ 
+  margin-bottom: 3.4rem;
+}
+
+.sidebar {
+  padding: 0 2.2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+
+  margin-top: 3.2rem;
+}
+
+.item {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.item img {
+  width: 151px;
+  height: 84px;
+}
+
+.details h2 {
+  font-size: 1.8rem;
+}
+
+.details p {
+  font-size: 1.4rem;
+  width: 215px;
+}
+
+footer {
+  background: #065E7C;
+  padding: 1.6rem 3.2rem;
+  margin: 0 auto;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 1020px) {
+  .container {
+    display: flex;
+    max-width: fit-content;
+  }
+  .sidebar {
+    margin-top: 2.2rem;
+  }
+  .page img {
+    width: 600px;
+    margin-bottom: 2.2rem;
+    margin-top: 2.2rem;
+    padding: 0 2.2rem;
+  }
+  .page p {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+    gap: 2rem;
+  }
+  .sidebar {
+    margin-top: 2.2rem;
+  }
+  .page img {
+    width: 950px;
+    margin-bottom: 2.2rem;
+    margin-top: 2.2rem;
+    padding: 0 2.2rem;
+  }
+  .page p {
+    width: 950px;
+  }
+}
